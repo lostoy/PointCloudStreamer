@@ -1,0 +1,7 @@
+*.opensdf
+*.sdf
+*.exe
+*.dll
+Thumbs.db
+data/
+build/
