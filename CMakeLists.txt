@@ -1,10 +1,9 @@
 cmake_minimum_required(VERSION 2.8)
 project(PCL_Streamer)
 
-set(Boost_DIR C:/local/boost_1_55_0_vs11_64/include)
-set(Boost_LIBRARY_DIR C:/local/boost_1_55_0_vs11_64/lib)
 
-find_package(Boost)
+
+find_package(Boost REQUIRED)
 find_package(PCL 1.2 REQUIRED)
 find_package( OpenCV REQUIRED )
 
