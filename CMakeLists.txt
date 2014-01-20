@@ -14,7 +14,7 @@ link_directories(${PCL_LIBRARY_DIRS})
 add_definitions(${PCL_DEFINITIONS})
 add_dependencies(gpu_utility gpu_utility)
 
-add_executable(PointCloudStreamer PointCloudStreamer.cpp SocketServer.cpp SocketServer.hpp )
+add_executable(PointCloudStreamer StreamerApp.cpp PointCloudStreamer.cpp PointCloudStreamer.hpp SocketServer.cpp SocketServer.hpp )
 
 
 target_link_libraries( PointCloudStreamer ${Boost_LIBRARIES} ${PCL_LIBRARIES} ${OpenCV_LIBS} gpu_utility)
